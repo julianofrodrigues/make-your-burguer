@@ -1,41 +1,41 @@
 <template>
-    <!-- <Message :msg="msg" v-show="msg" /> -->
-    <div>
-      <form id="burger-form" method="POST" @submit="createBurger">
-        <div class="input_container">
-          <label for="nome">Nome do cliente:</label>
-          <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
+  <Message :msg="msg" v-show="msg" />
+  <div>
+    <form id="burger-form" method="POST" @submit="createBurger">
+      <div class="input_container">
+        <label for="nome">Nome do cliente:</label>
+        <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
+      </div>
+      <div class="input_container">
+        <label for="pao">Escolha o pão:</label>
+        <select name="pao" id="pao" v-model="pao">
+          <option value="" disabled>Selecione o seu pão</option>
+          <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
+        </select>
+      </div>
+      <div class="input_container">
+        <label for="carne">Escolha a carne do seu Burger:</label>
+        <select name="carne" id="carne" v-model="carne">
+          <option value="" disabled>Selecione o tipo de carne</option>
+          <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
+        </select>
+      </div>
+      <div id="opcionais_container" class="input_container">
+        <label id="opcionais_title" for="opcionais">Selecione os opcionais:</label>
+        <div class="checkbox_container" v-for="opcional in opcionaisdata" :key="opcional.id">
+          <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
+          <span>{{ opcional.tipo }}</span>
         </div>
-        <div class="input_container">
-          <label for="pao">Escolha o pão:</label>
-          <select name="pao" id="pao" v-model="pao">
-            <option value="">Selecione o seu pão</option>
-            <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
-          </select>
-        </div>
-        <div class="input_container">
-          <label for="carne">Escolha a carne do seu Burger:</label>
-          <select name="carne" id="carne" v-model="carne">
-            <option value="">Selecione o tipo de carne</option>
-            <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
-          </select>
-        </div>
-        <div id="opcionais_container" class="input_container">
-          <label id="opcionais_title" for="opcionais">Selecione os opcionais:</label>
-          <div class="checkbox_container" v-for="opcional in opcionaisdata" :key="opcional.id">
-            <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
-            <span>{{ opcional.tipo }}</span>
-          </div>
-        </div>
-        <div class="input_container">
-          <input class="submit-btn" type="submit" value="Criar meu Burger!">
-        </div>
-      </form>
-    </div>
-  </template>
+      </div>
+      <div class="input_container">
+        <input class="submit-btn" type="submit" value="Criar meu Burger!">
+      </div>
+    </form>
+  </div>
+</template>
   
-  <script>
-//   import Message from './Message'
+<script>
+  import Message from './Message'
   export default {
     name: "BurgerForm",
     data() {
@@ -74,9 +74,8 @@
           headers: { "Content-Type" : "application/json" },
           body: dataJson
         });
-        const res = await req.json()
-        console.log(res)
-        this.msg = "Pedido realizado com sucesso!"
+        const res = await req.json();
+        this.msg = `Pedido Nº ${res.id} realizado com sucesso!`
         // clear message
         setTimeout(() => this.msg = "", 3000)
         // limpar campos
@@ -90,9 +89,9 @@
     mounted () {
       this.getIngredientes()
     },
-    // components: {
-    //   Message
-    // }
+    components: {
+      Message
+    }
   }
   </script>
   
