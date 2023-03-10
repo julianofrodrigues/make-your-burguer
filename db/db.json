@@ -79,50 +79,18 @@
   ],
   "burgers": [
     {
-      "nome": "Teste",
-      "carne": "Veggie burger",
-      "pao": "3 Queijos",
-      "opcionais": [
-        "Tomate",
-        "Pepino",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
-      "nome": "teste2",
-      "carne": "Maminha",
-      "pao": "Integral",
-      "opcionais": [
-        "Bacon"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Juliano ",
+      "nome": "Juliano Ferreira Rodrigues",
       "carne": "Picanha",
       "pao": "3 Queijos",
       "opcionais": [
         "Bacon",
         "Cheddar",
-        "Tomate",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "Testeid",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
         "Cebola roxa",
-        "Pepino"
+        "Pepino",
+        "Tomate"
       ],
       "status": "Solicitado",
-      "id": 5
+      "id": 1
     }
   ]
 }

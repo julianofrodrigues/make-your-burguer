@@ -1,6 +1,7 @@
 <template>
   <Navbar :logo="logo_src" :alt="app_name" />
-  <router-view/>
+    <router-view/>
+
   <Footer />
 </template>
 
@@ -29,7 +30,6 @@
     margin: 0;
     box-sizing: border-box;
   }
-
   .main_container {
     margin: 50px;
     min-height: 250px;
