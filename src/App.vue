@@ -32,7 +32,7 @@
   }
   .main_container {
     margin: 50px;
-    min-height: 250px;
+    min-height: 921px;
   }
   
   h1 {
