@@ -12,7 +12,7 @@ Project made to study the basics of vue, where a form is created for the custome
 <img src=""/><br>
 </p>
 
-</detail>
+</details>
 
 ## 📁 Project Access
 To try it is very simple:<br>
