@@ -7,9 +7,9 @@ Project made to study the basics of vue, where a form is created for the custome
 ## Application images below 🥓
 <details> <summary> Click Here to see screenshots </summary>
 <p align="center">
-<img src=""/><br>
-<img src=""/><br>
-<img src=""/><br>
+<img src="https://i.imgur.com/l2yVSvX.png"/><br>
+<img src="https://i.imgur.com/fw1vq3f.png"/><br>
+<img src="https://i.imgur.com/SNhcjeO.png"/><br>
 </p>
 
 </details>
@@ -18,7 +18,7 @@ Project made to study the basics of vue, where a form is created for the custome
 To try it is very simple:<br>
 -Clone the repository
 ```bash
-$ git clone 
+$ git clone https://github.com/julianofrodrigues/make-your-burguer
 ```
 -Download the libraries
 ```bash

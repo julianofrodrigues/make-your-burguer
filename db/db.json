@@ -79,7 +79,7 @@
   ],
   "burgers": [
     {
-      "nome": "Juliano Ferreira Rodrigues",
+      "nome": "Juliano",
       "carne": "Picanha",
       "pao": "3 Queijos",
       "opcionais": [
@@ -89,8 +89,55 @@
         "Pepino",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 1
+    },
+    {
+      "nome": "Ana",
+      "carne": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Cebola roxa",
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "Em produção",
+      "id": 2
+    },
+    {
+      "nome": "Carol",
+      "carne": "Picanha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar"
+      ],
+      "status": "Finalizado",
+      "id": 3
+    },
+    {
+      "nome": "João",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "opcionais": [
+        "Cebola roxa",
+        "Pepino",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "nome": "Lucas",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Cebola roxa",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 5
     }
   ]
 }
